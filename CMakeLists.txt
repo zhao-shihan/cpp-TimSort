@@ -48,16 +48,16 @@ configure_package_config_file(
         ${CMAKE_INSTALL_LIBDIR}/cmake/gfx
 )
 
-write_basic_package_version_file(
-    ${CMAKE_BINARY_DIR}/cmake/gfx-timsort-config-version.cmake
-    COMPATIBILITY SameMajorVersion
-    ARCH_INDEPENDENT
-)
+# write_basic_package_version_file(
+#     ${CMAKE_BINARY_DIR}/cmake/gfx-timsort-config-version.cmake
+#     COMPATIBILITY SameMajorVersion
+#     ARCH_INDEPENDENT
+# )
 
 install(
     FILES
         ${CMAKE_CURRENT_BINARY_DIR}/cmake/gfx-timsort-config.cmake
-        ${CMAKE_CURRENT_BINARY_DIR}/cmake/gfx-timsort-config-version.cmake
+        # ${CMAKE_CURRENT_BINARY_DIR}/cmake/gfx-timsort-config-version.cmake
     DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/gfx
 )
 
